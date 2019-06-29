@@ -14,6 +14,20 @@ body{
 i{
     padding-right: 10px;
 }
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.title-content{
+    text-align: left;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    text-indent: 20px;
+}
+ol, ul{
+    list-style: none;
+}
+/*module header*/
 .header-container{
     display: flex;
     flex-direction: row;
@@ -28,7 +42,7 @@ i{
     width: 50%;
     padding-top: 5px;
     text-align: left;
-    text-indent: 30px;
+    text-indent: 60px;
     text-shadow: #000000 1px 1px 3px;
 }
 .class{
@@ -38,6 +52,8 @@ i{
     background-color: #902063;
     padding-top: 5px;
 }
+/*module header*/
+
 .content-container{
     display: grid;
     grid-template-columns: 40% 60%;
@@ -63,4 +79,22 @@ i{
     padding: 10px;
     margin: 0 10px 0 10px;
     text-indent: 20px;
+}
+
+/*module progress*/
+.progress-bar, .progress-bar span{
+    height: 10px;
+    width: 80%;
+    background-color: #ffffff;
+	display: block;
+}
+.progress-bar{
+    background-color: #661345;
+}
+.flex--1{
+    text-align: left;
+    text-indent: 20px;
+}
+.module-progress-content li{
+    margin-bottom: 10px
 }
