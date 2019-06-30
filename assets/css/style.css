@@ -11,12 +11,16 @@ body{
     margin-right: auto;
 
 }
-i{
+.info i{
     padding-right: 10px;
 }
 a{
     text-decoration: none;
     color: #ffffff;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 4, 252);
 }
 .title-content{
     text-align: left;
@@ -26,6 +30,9 @@ a{
 }
 ol, ul{
     list-style: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 /*module header*/
 .header-container{
@@ -91,10 +98,62 @@ ol, ul{
 .progress-bar{
     background-color: #661345;
 }
-.flex--1{
+.flex--1 > span{
     text-align: left;
     text-indent: 20px;
 }
 .module-progress-content li{
     margin-bottom: 10px
+}
+
+/*moduele infomation-content*/
+.infomation-content{
+    text-align: left;
+    text-indent: 20px;
+    padding: 10px;
+}
+.infomation-content h2::after{
+    content: '';
+    display: block;
+    width: 40%;
+    position: absolute;
+    height: 5px;
+    background: #902063;
+    right: 0;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex .flex--1 {
+	flex: 1;
+}
+
+.circle {
+	font-size: 14px;
+	color: #ffffff;
+	background: #661345;
+	border-radius: 50%;
+	text-align: center;
+	margin-right: 20px;
+}
+.circle.circle--large {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+}
+.circle.circle--medium {
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+}
+.circle.circle--small {
+	width: 30px;
+	height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.circle.circle--white {
+	color: #661345;
+	background: #ffffff;
 }
