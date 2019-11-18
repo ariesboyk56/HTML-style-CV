@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tạo bảng, trộn dòng và cột</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+    </head>
+    <body>
+            <script>
+                    function myFunction() {
+                    document.getElementById("field2").value = document.getElementById("field1").value;
+                    }
+                    </script>
+        <div>
+            <form action="" >
+                <h2>Đăng Nhập</h2>
+                <table>
+                        <tr>
+                            <td>Mã người dùng:</td>
+                            <td><input type="text" id="field1" name="name" value="ptnhung"></td>
+                        </tr>
+                        <tr>
+                            <td>Mật khẩu:</td>
+                            <td><input type="password"  name="pass" value="ptnhung"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button onclick="myFunction()">Đồng ý</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="label" id="field2"></td>
+                        </tr>
+                </table>
+            </form>
+        </div> 
+    </body>
+</html>

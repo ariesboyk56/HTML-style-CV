@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tạo bảng, trộn dòng và cột</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+    </head>
+    <body>
+        <style>
+            table, th, td{
+                border: #000 solid 1px;
+                border-collapse: collapse;
+                width: max-content;
+            }
+            #row1{
+                background-color: #FF0000;
+                color: #FFFFFF;
+                text-align: right;
+                height: 45px;
+            }
+            #row3{
+                background-color: #FFBBBB;
+                color: #FF0000;
+                text-align: center;
+                font-size: 25px;
+                height: 65px;
+            }
+            #imgsquare{
+                width: 100px;
+                height: 120px;
+            }
+            #row4{
+                width: 50%;
+            }
+        </style>
+        <div id="container">
+            <div class="tablecontent">
+                <table style="width:600px;">
+                    <tr>
+                        <th colspan="3" id="row1">Công nghệ dầu gội dưỡng tóc mới</th>
+                        <th rowspan="3" id="imgsquare"><img src=".\pictures\bai7-removebg-preview.png" alt="" width="50px" height="50px"></th>
+                    </tr>
+                    <tr><th colspan="3"></th></tr>
+                    <tr>
+                        <th colspan="3" id="row3">Tỏa sáng cùng DOUBLE RICH</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="row4">
+                            <ul>
+                                <li><p>Sản phẩm khuyến mãi</p>
+                                    <ul>
+                                        <li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</li>
+                                    </ul>
+                                </li>
+                                <li><p>Đối tượng tham gia</p>
+                                    <ul>
+                                        <li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi mới</li>
+                                        <li>Chương trình không áp dụng cho nhân viên, nhà phân phối bao gồm các tổng đại lý, đại lý, cửa hàng bán lẻ và các cá nhân kinh doanh sản phẩm của công tu LDMP LD Vina, công ty quảng cáo, công ty là dịch vụ chương trình khuyến mãi, nhân viên siêu thị</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                        <td colspan="2" id="row4">
+                                <ul>
+                                    <li><p>Sản phẩm khuyến mãi</p>
+                                        <ul>
+                                            <li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</li>
+                                        </ul>
+                                    </li>
+                                    <li><p>Đối tượng tham gia</p>
+                                        <ul>
+                                            <li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi mới</li>
+                                            <li>Chương trình không áp dụng cho nhân viên, nhà phân phối bao gồm các tổng đại lý, đại lý, cửa hàng bán lẻ và các cá nhân kinh doanh sản phẩm của công tu LDMP LD Vina, công ty quảng cáo, công ty là dịch vụ chương trình khuyến mãi, nhân viên siêu thị</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
